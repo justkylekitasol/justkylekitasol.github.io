@@ -3,26 +3,17 @@
 @keyframes twoanim {0% {opacity: 0;}34% {opacity: 0;}37% {opacity: 1;}65% {opacity: 1;}68% {opacity: 0}}
 @keyframes threeanim {0% {opacity: 0;}69% {opacity: 0;}72% {opacity: 1;}97% {opacity: 1;}100% {opacity: 0}}
 /*--------------------
-    1. Author CSS
-    2. Preloader
     3. Main Menu
     4. Header
     5. About Me
     6. Education
     7. Experience
-    8. Profiles
     9. Portfolio
-    10. Services
-    11. Fun Facts
     12. Skills
-    13. Clients
-    14. Blog Page
-    15. Blog Details
     16. Contact
     17. Footer
     18. Button
     19. Form
-    20. Repeat Class
 ---------------------*/
 /* 1. Author CSS */
 body {
