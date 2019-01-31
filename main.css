@@ -185,7 +185,7 @@ header {
 .logo {
   position: absolute;
   left: 0;
-  transition: 1.3s;
+  transition: 0.8s;
   opacity: 0;
   visibility: hidden;
   cursor: pointer;
@@ -194,6 +194,9 @@ header {
 .logo img {
   width: 35px;
   height: 35px;
+}
+.logo:active {
+  -webkit-tap-highlight-color: transparent;
 }
 header.scrolled .logo {
   opacity: 1;
@@ -209,10 +212,13 @@ header.scrolled .logo {
   top: 20px;
   width: 25px;
   border-radius: 50%;
-  transition: 1.3s;
+  transition: 0.8s;
   margin: 8px 0;
   opacity: 0;
   visibility: hidden;
+}
+.nav-trigger:active {
+  -webkit-tap-highlight-color: transparent;
 }
 header.scrolled .nav-trigger {
   opacity: 1;
@@ -229,10 +235,10 @@ header.scrolled .nav-trigger {
 .nav-trigger span:not(:first-child) {
   margin-top: 4px;
 }
-.nav-trigger:hover span {
-  background-color: #f28500;
-}
 @media (min-width: 769px) {
+  .logo {
+    transition: 1.3s;
+  }
   .nav-trigger {
     display: none;
   }
@@ -243,7 +249,7 @@ header.scrolled .nav-trigger {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.8s;
+  transition: 0.5s;
   width: 90%;
 }
 header.scrolled {
@@ -261,7 +267,7 @@ header.scrolled .header-title {
   width: 90%;
   height: 100px;
   margin-bottom: 20px;
-  transition: 0.8s;
+  transition: 0.5s;
 }
 header.scrolled .title-animation {
   opacity: 0;
@@ -312,12 +318,23 @@ header .topnav ul {
   }
 }
 @media (max-width: 768px) {
+  header .topnav {
+    transition: 0.5s;
+    top: 67%;
+  }
   header {
     box-shadow: unset;
   }
   header.scrolled .topnav {
     opacity: 0;
     visibility: hidden;
+  }
+  header .topnav ul {
+    display: block;
+    text-align: center; 
+  }
+  header .topnav ul li:not(:first-child) {
+    margin-top: 20px;
   }
 }
 .topnav ul li, .sidenav ul li {
@@ -330,6 +347,10 @@ header .topnav ul {
   text-transform: uppercase;
   transition: 0.5s;
   font-weight: 500;
+  outline: none;
+}
+.topnav ul:active, .sidenav ul:active {
+  -webkit-tap-highlight-color: transparent;
 }
 .topnav ul li a:hover {
   color: #f28500;
@@ -356,9 +377,6 @@ header .sidenav ul li {
 }
 header .sidenav ul li a {
   font-size: 18px;
-}
-header .sidenav ul li a:hover {
-  color: #f28500;
 }
 .cover {
   transition: transform 0.7s;
