@@ -25,12 +25,12 @@ $(document).ready(function(){
       scrollTop: $(".about-section").offset().top
     }, 1300)
   })
-  $('.about-btn2').click(function(){
+  $('.contact-btn').click(function(){
     $("header").addClass('scrolled');
     $("body").removeClass('overflow');
     // $(".about-section").removeClass('padding');
     $('html, body').animate({
-      scrollTop: $(".experience-section").offset().top-60
+      scrollTop: $(".contact-section").offset().top-60
     }, 1300)
   })
 })

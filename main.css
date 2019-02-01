@@ -342,7 +342,7 @@ header.scrolled .title-animation {
 }
 header .topnav {
   position: absolute;
-  top: 59%;
+  top: 55%;
   right: 50%;
   transform: translate(50%, -50%);
   transition: 1.3s;
@@ -362,7 +362,7 @@ header .topnav ul {
 @media (max-width: 768px) {
   header .topnav {
     transition: 0.5s;
-    top: 67%;
+    top: 62%;
   }
   header.scrolled {
     background: #232323;
@@ -396,6 +396,12 @@ header .topnav ul {
 }
 .topnav ul li a:hover {
   color: #f28500;
+}
+.hidden {
+  display: none
+}
+header.scrolled .hidden {
+  display: unset;
 }
 .sidenav {
   background-color: #151515;
@@ -566,6 +572,10 @@ section {
     margin: 20px auto;
   }
 }
+.about-buttons a:first-child {
+  background: #f28500;
+  border: 1px solid transparent; 
+}
 .experience-section, .education-section {
   padding-top: 30px;
   transition: 1.3s;
@@ -636,4 +646,10 @@ section {
   .experience-left {
     text-align: left;
   }
+}
+
+.contact-section {
+  padding-top: 30px;
+  transition: 1.3s;
+  box-sizing: border-box;
 }
