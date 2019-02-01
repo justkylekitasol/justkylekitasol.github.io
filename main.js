@@ -1,3 +1,7 @@
+$(window).load(function(){
+  setTimeout(function(){ $('.loader-bg').fadeOut(); }, 1000);
+     
+});
 function toggleSidenav() {
   document.body.classList.toggle('sidenav-active');  
   document.body.classList.toggle('noscroll');

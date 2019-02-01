@@ -2,6 +2,15 @@
 @keyframes oneanim {0% {opacity: 0;}3% {opacity: 1;}30% {opacity: 1;}33% {opacity: 0;}97% {opacity: 0}}
 @keyframes twoanim {0% {opacity: 0;}34% {opacity: 0;}37% {opacity: 1;}65% {opacity: 1;}68% {opacity: 0}}
 @keyframes threeanim {0% {opacity: 0;}69% {opacity: 0;}72% {opacity: 1;}97% {opacity: 1;}100% {opacity: 0}}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 /*--------------------
     3. Main Menu
     4. Header
@@ -16,6 +25,26 @@
     19. Form
 ---------------------*/
 /* 1. Author CSS */
+.loader-bg {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: 9998;
+	background:#151515;
+}
+.loader {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader img {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 body {
   margin: 0;
   padding: 0;
@@ -225,6 +254,11 @@ header.scrolled .nav-trigger {
   visibility: visible;
   right: 5%;
 }
+@media (max-width: 768px) {
+  header.scrolled .nav-trigger {
+    top: 25px;
+  }
+}
 .nav-trigger span {
   background-color: #fff;
   height: 2px;
@@ -252,6 +286,14 @@ header.scrolled .nav-trigger {
   transition: 0.5s;
   width: 90%;
 }
+@media (max-width: 425px) {
+  .header-title {
+    top: 30%;
+  }
+}
+.header-title h1 {
+  margin-bottom: 0;
+}
 header.scrolled {
   height: 80px;
 }
@@ -260,13 +302,13 @@ header.scrolled .header-title {
   visibility: hidden;
 }
 .title-animation {
-  position: absolute;
+  /* position: absolute;
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
   height: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; */
   transition: 0.5s;
 }
 header.scrolled .title-animation {
@@ -287,15 +329,15 @@ header.scrolled .title-animation {
   z-index: -1;
 }
 .text-one {
-  animation: oneanim 15.0s infinite;
+  animation: oneanim 12.0s infinite;
   opacity: 0;
 }
 .text-two {
-  animation: twoanim 15.0s infinite;
+  animation: twoanim 12.0s infinite;
   opacity: 0;
 }
 .text-three {
-  animation: threeanim 15.0s infinite;
+  animation: threeanim 12.0s infinite;
   opacity: 0;
 }
 header .topnav {
@@ -322,8 +364,8 @@ header .topnav ul {
     transition: 0.5s;
     top: 67%;
   }
-  header {
-    box-shadow: unset;
+  header.scrolled {
+    background: #232323;
   }
   header.scrolled .topnav {
     opacity: 0;
