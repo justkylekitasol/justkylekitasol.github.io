@@ -55,6 +55,12 @@ body {
 body.overflow {
   overflow: hidden;
 }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
 h1, h2 {
   color: white;
   font-weight: 700;
@@ -62,6 +68,7 @@ h1, h2 {
 }
 h3 {
   color: white;
+  font-size: 1.75rem;
   font-weight: 700;
   text-transform: capitalize;
 }
@@ -204,6 +211,7 @@ body::-webkit-scrollbar-thumb
 header {
   background: #151515;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   height: 100vh;
@@ -342,7 +350,7 @@ header.scrolled .title-animation {
 }
 header .topnav {
   position: absolute;
-  top: 55%;
+  top: 59%;
   right: 50%;
   transform: translate(50%, -50%);
   transition: 1.3s;
@@ -402,6 +410,11 @@ header .topnav ul {
 }
 header.scrolled .hidden {
   display: unset;
+}
+@media (max-width: 768px) {
+  .hidden {
+    display: unset;
+  }
 }
 .sidenav {
   background-color: #151515;
@@ -489,6 +502,10 @@ section {
 .title {
   margin-top: 0;
 }
+.about-me .about-wrap {
+  position: relative;
+  z-index: 1;
+}
 .about-me .about-wrap .about-image {
   width: 100%;
   height: 400px;
@@ -500,17 +517,19 @@ section {
   background-position: top;
   background-size: cover;
 }
-/* .about-me .about-wrap .about-icons {
+.about-me .about-wrap .about-icons {
   position: absolute;
   top: 50%;
   right: 0;
   padding: 10px;
+  /* background: #151515; */
   -webkit-transform: translate(0, -50%);
   -moz-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  border: 1px solid #333333;
+  /* border: 1px solid #333333;
+  border-right: none; */
   z-index: 2;
 }
 @media (max-width: 575.98px) {
@@ -523,13 +542,12 @@ section {
 }
 @media (max-width: 575.98px) {
   .about-me .about-wrap .about-icons li {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
 .about-me .about-wrap .about-icons li a {
   color: white;
   background: #151515;
-  padding: 7px;
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -545,14 +563,17 @@ section {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-@media (max-width: 575.98px) {
-  .about-me .about-wrap .about-icons li a {
-    padding: 10px;
-  }
+.fa {
+  margin: 11px;
 }
 .about-me .about-wrap .about-icons li a:hover {
-  background: #ff5d56;
+  background: #f28500;
   border: 1px solid transparent;
+}
+/* @media (max-width: 768px) {
+  .about-me .about-wrap .about-icons li a {
+    background: #f28500;
+  }
 } */
 .about-text h2 {
   margin-top: 0;
@@ -569,12 +590,18 @@ section {
     text-align: center;
   }
   .hr-role {
-    margin: 20px auto;
+    margin: 30px auto;
   }
 }
 .about-buttons a:first-child {
   background: #f28500;
-  border: 1px solid transparent; 
+  border: 1px solid transparent;
+  margin-right: 15px;
+}
+@media (max-width: 426px) {
+  .about-buttons {
+    text-align: center;
+  }
 }
 .experience-section, .education-section {
   padding-top: 30px;
@@ -603,14 +630,14 @@ section {
   background: #222222;
   border: 1px solid #333333;
 }
-.single-experience h2, .single-education h2 {
+.single-experience h3, .single-education h3 {
   color: #aaaaaa;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-.single-experience:hover h2, .single-education:hover h2 {
+.single-experience:hover h3, .single-education:hover h3 {
   color: #f28500;
 }
 .experience-left {
