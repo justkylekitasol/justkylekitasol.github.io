@@ -490,8 +490,12 @@ section {
   }
   .about-me .about-wrap .about-image {
     height: 350px;
-    max-width: 325px;
     margin: auto;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .about-me .about-wrap .about-image {
+    max-width: 325px;
   }
 }
 @media (max-width: 576px) {
