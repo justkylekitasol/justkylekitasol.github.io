@@ -33,6 +33,14 @@ $(document).ready(function(){
       scrollTop: $(".skills-section").offset().top-60
     }, 1300)
   })
+  $('.portfolio-btn').click(function(){
+    $("header").addClass('scrolled');
+    $("body").removeClass('overflow');
+    // $(".about-section").removeClass('padding');
+    $('html, body').animate({
+      scrollTop: $(".portfolio-section").offset().top-60
+    }, 1300)
+  })
   $('.contact-btn').click(function(){
     $("header").addClass('scrolled');
     $("body").removeClass('overflow');
@@ -52,3 +60,30 @@ $(document).ready(function(){
 //     $("header").removeClass('scrolled');
 //   }
 // })
+$(function () {
+		
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('.portfolio-grid').mixItUp({
+				selectors: {
+  			  target: '.portfolio',
+  			  filter: '.filter'	
+  		  },
+  		  load: {
+    		  filter: 'all' // show app tab on first load
+    		}     
+			});								
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+});		
+

@@ -43,7 +43,7 @@
         <li><a class="home-btn hidden">Home</a></li>
         <li><a class="about-btn">About</a></li>
         <li><a class="skills-btn">Skills</a></li>
-        <li><a class="">Portfolio</a></li>
+        <li><a class="portfolio-btn">Portfolio</a></li>
         <li><a class="contact-btn">Contact</a></li>
       </ul>
     </nav>
@@ -52,7 +52,7 @@
         <li><a class="home-btn" onclick="toggleSidenav();">Home</a></li>
         <li><a class="about-btn" onclick="toggleSidenav();">About</a></li>
         <li><a class="skills-btn" onclick="toggleSidenav();">Skills</a></li>
-        <li><a class="" onclick="toggleSidenav();">Portfolio</a></li>
+        <li><a class="portfolio-btn" onclick="toggleSidenav();">Portfolio</a></li>
         <li><a class="contact-btn" onclick="toggleSidenav();">Contact</a></li>
       </ul>
     </nav>
@@ -164,7 +164,7 @@
     </section>
     <section class="skills-section">
       <div class="container">
-        <h1 class="title">Skills</h1>
+        <h2 class="title">Skills</h2>
         <span class="hr-role"></span>
         <div class="skills">
           <div class="single-skill">
@@ -206,20 +206,97 @@
         </div>
       </div>
     </section>
-    <section class="contact-section">
+    <section class="portfolio-section">
       <div class="container">
-        <h1 class="title">Contact</h1>
+        <h2 class="title">Portfolio</h2>
         <span class="hr-role"></span>
-        <div class="contact">
-          <div class="contact-form">
-            <form action="" method="POST">
-
-            </form>
+        <div class="portfolio-area">
+          <div class="portfolio-tab">
+            <ul id="filters" class="clearfix">
+                <li class="filter active" data-filter=".snippet, .design, .full-project">all</li>
+                <li class="filter" data-filter=".snippet">Snippets</li>
+                <li class="filter" data-filter=".design">Design</li>
+                <li class="filter" data-filter=".full-project">Full Project</li>
+            </ul>
           </div>
-
+          <div class="portfolio-grid">
+            <div class="portfolio snippet" data-cat="snippet">
+              <div class="portfolio-wrapper">
+                <img src="https://www.queness.com/resources/html/simple-portfolio-page/img/portfolios/logo/5.jpg" alt="" />
+                <div class="label">
+                  <div class="label-text">
+                    <a class="text-title">Bird Document</a> 
+                    <span class="text-category">Snippet</span>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio design" data-cat="design">
+              <div class="portfolio-wrapper">
+                <img src="https://www.queness.com/resources/html/simple-portfolio-page/img/portfolios/app/1.jpg" alt="" />
+                <div class="label">
+                  <div class="label-text">
+                    <a class="text-title">Bird Document</a> 
+                    <span class="text-category">Logo</span>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio full-project" data-cat="full-project">
+              <div class="portfolio-wrapper">
+                <img src="https://www.queness.com/resources/html/simple-portfolio-page/img/portfolios/logo/5.jpg" alt="" />
+                <div class="label">
+                  <div class="label-text">
+                    <a class="text-title">Bird Document</a> 
+                    <span class="text-category">Snippet</span>
+                  </div>
+                  <div class="label-bg"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="title">Contact</h2>
+        <span class="hr-role"></span>
+        <div class="contact">
+          <div class="single-contact">
+            <div class="icon-area">
+              <span class="icon"><i class="fa fa-map-marker"></i></span>
+            </div>
+            <div class="contact-text">
+              <span>Lorem, ipsum dolor.<br>lorem lorem<br>Country.</span>
+            </div>
+          </div>
+          <div class="single-contact">
+            <div class="icon-area">
+              <span class="icon"><i class="fa fa-envelope"></i></span>
+            </div>
+            <div class="contact-text">
+              <span><a href="#">email@email.com</a></span>
+            </div>
+          </div>
+          <div class="single-contact">
+            <div class="icon-area">
+              <span class="icon"><i class="fa fa-phone"></i></span>
+            </div>
+            <div class="contact-text">
+              <span>+123 456 789 <br>+987 654 321</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-area text-center py-4">
+      <div class="container">
+        <span>&copy; copyright <a href="#" target="_blank">KITS</a> 2019. all right reserved.</span>
+      </div>
+    </footer>
     
   </main>
   <script
@@ -227,6 +304,7 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
