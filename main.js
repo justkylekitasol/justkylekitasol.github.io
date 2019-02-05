@@ -1,5 +1,5 @@
 $(window).load(function(){
-  setTimeout(function(){ $('.loader-bg').fadeOut(); }, 1000);
+  
      
 });
 function toggleSidenav() {
@@ -8,6 +8,7 @@ function toggleSidenav() {
 }
 
 $(document).ready(function(){
+  setTimeout(function(){ $('.loader-bg').fadeOut(); }, 1000);
   $("body").addClass('overflow');
   $('.home-btn').click(function(){
     $("body").addClass('overflow');
@@ -51,21 +52,9 @@ $(document).ready(function(){
   })
 })
 
-// $(window).scroll(function(){
-//   var scroll = $(window).scrollTop();
-//   if (scroll > 0) {
-//     $("body").removeClass('overflow');
-//     $("header").addClass('scrolled');
-//   } else {
-//     $("header").removeClass('scrolled');
-//   }
-// })
 $(function () {
-		
 	var filterList = {
-	
 		init: function () {
-		
 			// MixItUp plugin
 			// http://mixitup.io
 			$('.portfolio-grid').mixItUp({
@@ -77,13 +66,9 @@ $(function () {
     		  filter: 'all' // show app tab on first load
     		}     
 			});								
-		
 		}
-
 	};
-	
 	// Run the show!
 	filterList.init();
-	
 });		
 
