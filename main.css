@@ -850,12 +850,15 @@ section {
   background-image: url('ticket-tracker.JPG');
 }
 .fourth .portfolio-bg{
-  background-image: url('Recipe.JPG');
+  background-image: url('slider.JPG');
 }
 .fifth .portfolio-bg{
-  background-image: url('hover-effects.JPG');
+  background-image: url('Recipe.JPG');
 }
 .sixth .portfolio-bg{
+  background-image: url('hover-effects.JPG');
+}
+.seventh .portfolio-bg{
   background-image: url('nav.JPG');
 }
 /* .portfolio img {
