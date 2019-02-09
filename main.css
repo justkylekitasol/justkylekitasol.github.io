@@ -847,7 +847,7 @@ section {
   background-image: url('materialize-dashboard.JPG');
 }
 .third .portfolio-bg{
-  background-image: url('ticket-tracker.JPG');
+  background-image: url('todo.PNG');
 }
 .fourth .portfolio-bg{
   background-image: url('slider.JPG');
@@ -856,10 +856,16 @@ section {
   background-image: url('Recipe.JPG');
 }
 .sixth .portfolio-bg{
-  background-image: url('hover-effects.JPG');
+  background-image: url('logo-pf.jpg');
 }
 .seventh .portfolio-bg{
+  background-image: url('hover-effects.JPG');
+}
+.eight .portfolio-bg{
   background-image: url('nav.JPG');
+}
+.ninth .portfolio-bg{
+  background-image: url('ticket-tracker.JPG');
 }
 /* .portfolio img {
   max-width:100%;
