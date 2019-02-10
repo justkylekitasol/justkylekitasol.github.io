@@ -499,7 +499,7 @@ section {
   background: #dddddd;
 }
 .about-me .about-wrap .about-bg {
-  /* background-image: url("smol.jpg"); */
+  background-image: url("profile-pic.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -610,6 +610,12 @@ section {
 .order-2 {
   order: 2;
 }
+/* .single-experience, .single-education {
+  display: grid;
+  grid-auto-rows: 0.5fr 2fr;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: start;
+} */
 .single-experience .experience-text, .single-education .education-text {
   background: #222222;
   border: 1px solid #333333;
