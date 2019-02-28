@@ -873,6 +873,9 @@ section {
 .ninth .portfolio-bg{
   background-image: url('ticket-tracker.JPG');
 }
+.tenth .portfolio-bg{
+  background-image: url('crud.JPG');
+}
 /* .portfolio img {
   max-width:100%;
   position: relative;
