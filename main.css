@@ -60,7 +60,7 @@ h4 {
   font-weight: 500;
 }
 h5 {
-  color: #f28500;
+  color: #00c1e4;
   text-transform: capitalize;
 }
 h6 {
@@ -167,7 +167,7 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-  background-color: #f28500;
+  background-color: #00c1e4;
   transition: 1s;
 }
 
@@ -187,7 +187,7 @@ body::-webkit-scrollbar-thumb
 }
 .template-btn:hover {
   color: white;
-  background: #f28500;
+  background: #00c1e4;
   border: 1px solid transparent;
 }
 
@@ -307,7 +307,7 @@ header.scrolled .title-animation {
   visibility: hidden;
 }
 .title-animation h3 {
-  color: #f28500;
+  color: #00c1e4;
 }
 .text-one, .text-two, .text-three {
   position: absolute;
@@ -353,7 +353,7 @@ header .topnav ul {
 @media (max-width: 768px) {
   header .topnav {
     transition: 0.5s;
-    top: 62%;
+    top: 68%;
   }
   header.scrolled {
     background: #232323;
@@ -386,7 +386,7 @@ header .topnav ul {
   -webkit-tap-highlight-color: transparent;
 }
 .topnav ul li a:hover {
-  color: #f28500;
+  color: #00c1e4;
 }
 .hidden {
   display: none
@@ -554,12 +554,12 @@ section {
   margin: 12px;
 }
 .about-me .about-wrap .about-icons li a:hover {
-  background: #f28500;
+  background: #00c1e4;
   border: 1px solid transparent;
 }
 /* @media (max-width: 768px) {
   .about-me .about-wrap .about-icons li a {
-    background: #f28500;
+    background: #00c1e4;
   }
 } */
 .about-text h3 {
@@ -568,7 +568,7 @@ section {
 .hr-role {
   width: 50px;
   height: 5px;
-  background: #f28500;
+  background: #00c1e4;
   display: block;
   margin: 20px 0;
 }
@@ -584,7 +584,7 @@ section {
   margin-top: 25px;
 }
 .about-buttons a:first-child {
-  background: #f28500;
+  background: #00c1e4;
   border: 1px solid transparent;
   margin-right: 15px;
 }
@@ -629,7 +629,7 @@ section {
   margin-top: 0;
 }
 .single-experience:hover h3, .single-education:hover h3 {
-  color: #f28500;
+  color: #00c1e4;
 }
 .experience-left {
   text-align: right;
@@ -678,7 +678,7 @@ section {
 }
 .skills {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   grid-gap: 30px;
   text-align: center;
@@ -785,10 +785,10 @@ section {
   }
 }
 .portfolio-tab ul li:hover {
-  background: #f28500;
+  background: #00c1e4;
 }
 .portfolio-tab ul .active {
-  background: #f28500;
+  background: #00c1e4;
 }
 .clearfix:after {
   display: table;
@@ -918,8 +918,8 @@ section {
   /* font-size:9px; */
 }
 .portfolio .template-btn {
-  background: #f28500;
-  border: 1px solid #f28500;
+  background: #00c1e4;
+  border: 1px solid #00c1e4;
   text-decoration: none;
   margin-top: 20px;
   font-weight: 500
@@ -992,7 +992,7 @@ section {
   border-radius: 50%; */
 }
 .single-contact:hover .icon {
-  color: #f28500;
+  color: #00c1e4;
 }
 .contact-text span a {
   color: #fff;
@@ -1008,8 +1008,8 @@ section {
   padding: 1.5rem 0;
 }
 .footer-area a {
-  color: #f28500;
+  color: #00c1e4;
 }
 .footer-area a:hover {
-  color: #f28500;
+  color: #00c1e4;
 }
