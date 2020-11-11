@@ -34,6 +34,14 @@ $(document).ready(function(){
       scrollTop: $(".skills-section").offset().top-60
     }, 1300)
   })
+  $('.managed-btn').click(function(){
+    $("header").addClass('scrolled');
+    $("body").removeClass('overflow');
+    // $(".about-section").removeClass('padding');
+    $('html, body').animate({
+      scrollTop: $(".managedsites-section").offset().top-60
+    }, 1300)
+  })
   $('.portfolio-btn').click(function(){
     $("header").addClass('scrolled');
     $("body").removeClass('overflow');
