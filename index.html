@@ -49,7 +49,6 @@
         <li><a class="home-btn hidden">Home</a></li>
         <li><a class="about-btn">About</a></li>
         <li><a class="skills-btn">Skills</a></li>
-        <li><a class="managed-btn">Managed Sites</a></li>
         <li><a class="portfolio-btn">Portfolio</a></li>
         <li><a class="contact-btn">Contact</a></li>
       </ul>
@@ -61,7 +60,6 @@
         <li><a class="home-btn" onclick="toggleSidenav();">Home</a></li>
         <li><a class="about-btn" onclick="toggleSidenav();">About</a></li>
         <li><a class="skills-btn" onclick="toggleSidenav();">Skills</a></li>
-        <li><a class="managed-btn" onclick="toggleSidenav();">Managed Sites</a></li>
         <li><a class="portfolio-btn" onclick="toggleSidenav();">Portfolio</a></li>
         <li><a class="contact-btn" onclick="toggleSidenav();">Contact</a></li>
       </ul>
@@ -241,8 +239,10 @@
             </ul>
           </div>
           <div class="single-skill">
-            <span class="skill-icon"><i class="fa fas fa-ellipsis-h"></i></span>
-            <h4>PLATFORMS & FRAMEWORKS</h4>
+            <span class="skill-icon">
+              <img src="cms.png" alt="CMS">
+            </span>
+            <h4>CMS & FRAMEWORKS</h4>
             <ul>
               <li>WORDPRESS</li>
               <li>SHOPIFY</li>
@@ -259,9 +259,7 @@
               <li>GIT</li>
               <li>GOOGLE TAG MANAGER</li>
               <li>GOOGLE ANALYTICS</li>
-              <li>GTMETRIX</li>
-              <li>OCTOBER CMS</li>
-              <li>FIREBASE</li>
+              <li>SITE SPEED</li>
             </ul>
           </div>
         </div>
@@ -275,7 +273,8 @@
         <span class="hr-role"></span>
         <div class="portfolio-tab">
           <ul id="filters" class="clearfix">
-              <li class="filter active" data-filter=".snippet, .design, .personal-project">all</li>
+              <li class="filter active" data-filter=".snippet, .design, .personal-project, .managed-site">all</li>
+              <li class="filter" data-filter=".managed-site">Managed Websites</li>
               <li class="filter" data-filter=".snippet">Snippets</li>
               <li class="filter" data-filter=".design">Design</li>
               <li class="filter" data-filter=".personal-project">Personal Project</li>
@@ -321,8 +320,21 @@
               </div>
             </div>
           </div>
-          <div class="portfolio snippet" data-cat="snippet">
+          <div class="portfolio managed-site" data-cat="managed-site">
             <div class="portfolio-wrapper fourth">
+              <div class="portfolio-bg"></div>
+              <div class="label">
+                <div class="label-text">
+                  <h4>Fire Magic Grills Wordpress Website</h4>
+                  <span class="text-category">Managed Site</span>
+                  <a href="https://www.firemagicgrills.com/" class="template-btn" target="_blank">View</a>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio snippet" data-cat="snippet">
+            <div class="portfolio-wrapper fifth">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -335,7 +347,7 @@
             </div>
           </div>
           <div class="portfolio personal-project" data-cat="personal-project">
-            <div class="portfolio-wrapper fifth">
+            <div class="portfolio-wrapper sixth">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -348,7 +360,7 @@
             </div>
           </div>
           <div class="portfolio design" data-cat="design">
-            <div class="portfolio-wrapper sixth">
+            <div class="portfolio-wrapper seventh">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -361,7 +373,7 @@
             </div>
           </div>
           <div class="portfolio snippet" data-cat="snippet">
-            <div class="portfolio-wrapper seventh">
+            <div class="portfolio-wrapper eight">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -373,8 +385,21 @@
               </div>
             </div>
           </div>
+          <div class="portfolio managed-site" data-cat="managed-site">
+            <div class="portfolio-wrapper ninth">
+              <div class="portfolio-bg"></div>
+              <div class="label">
+                <div class="label-text">
+                  <h4>Ancon COnstruction Wordpress Website</h4>
+                  <span class="text-category">Managed Site</span>
+                  <a href="https://www.anconconstruction.com/" class="template-btn" target="_blank">View</a>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
           <div class="portfolio snippet" data-cat="snippet">
-            <div class="portfolio-wrapper eight">
+            <div class="portfolio-wrapper tenth">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -387,7 +412,7 @@
             </div>
           </div>
           <div class="portfolio personal-project" data-cat="personal-project">
-            <div class="portfolio-wrapper ninth">
+            <div class="portfolio-wrapper eleventh">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
@@ -400,13 +425,52 @@
             </div>
           </div>
           <div class="portfolio personal-project" data-cat="personal-project">
-            <div class="portfolio-wrapper tenth">
+            <div class="portfolio-wrapper twelveth">
               <div class="portfolio-bg"></div>
               <div class="label">
                 <div class="label-text">
                   <h4>Vanilla javascript CRUD</h4>
                   <span class="text-category">Full Project</span>
                   <a href="https://codepen.io/jkmquitasol/full/zbvMyW" class="template-btn" target="_blank">View</a>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio managed-site" data-cat="managed-site">
+            <div class="portfolio-wrapper thirteenth">
+              <div class="portfolio-bg"></div>
+              <div class="label">
+                <div class="label-text">
+                  <h4>Castor & Pollux Wordpress Website</h4>
+                  <span class="text-category">Managed Site</span>
+                  <a href="https://www.castorpolluxpet.com/" class="template-btn" target="_blank">View</a>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio managed-site" data-cat="managed-site">
+            <div class="portfolio-wrapper fourteenth">
+              <div class="portfolio-bg"></div>
+              <div class="label">
+                <div class="label-text">
+                  <h4>HurryCane Shopify Website</h4>
+                  <span class="text-category">Managed Site</span>
+                  <a href="https://www.hurrycane.com/" class="template-btn" target="_blank">View</a>
+                </div>
+                <div class="label-bg"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio managed-site" data-cat="managed-site">
+            <div class="portfolio-wrapper fifteenth">
+              <div class="portfolio-bg"></div>
+              <div class="label">
+                <div class="label-text">
+                  <h4>Zuke's Wordpress Website</h4>
+                  <span class="text-category">Managed Site</span>
+                  <a href="https://www.zukes.com/" class="template-btn" target="_blank">View</a>
                 </div>
                 <div class="label-bg"> </div>
               </div>

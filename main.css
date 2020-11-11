@@ -587,6 +587,7 @@ section {
   background: #00c1e4;
   border: 1px solid transparent;
   margin-right: 15px;
+  color: #000;
 }
 @media (max-width: 426px) {
   .about-buttons {
@@ -856,25 +857,40 @@ section {
   background-image: url('todo.PNG');
 }
 .fourth .portfolio-bg{
-  background-image: url('slider.JPG');
+  background-image: url('fmg.PNG');
 }
 .fifth .portfolio-bg{
-  background-image: url('Recipe.JPG');
+  background-image: url('slider.JPG');
 }
 .sixth .portfolio-bg{
-  background-image: url('logo-pf.jpg');
+  background-image: url('Recipe.JPG');
 }
 .seventh .portfolio-bg{
-  background-image: url('hover-effects.JPG');
+  background-image: url('logo-pf.jpg');
 }
 .eight .portfolio-bg{
-  background-image: url('nav.JPG');
+  background-image: url('hover-effects.JPG');
 }
 .ninth .portfolio-bg{
-  background-image: url('ticket-tracker.JPG');
+  background-image: url('ancon.PNG');
 }
 .tenth .portfolio-bg{
+  background-image: url('nav.JPG');
+}
+.eleventh .portfolio-bg{
+  background-image: url('ticket-tracker.JPG');
+}
+.twelveth .portfolio-bg{
   background-image: url('crud.JPG');
+}
+.thirteenth .portfolio-bg{
+  background-image: url('castorpollux.PNG');
+}
+.fourteenth .portfolio-bg{
+  background-image: url('hurrycane.PNG');
+}
+.fifteenth .portfolio-bg{
+  background-image: url('zukes.PNG');
 }
 /* .portfolio img {
   max-width:100%;
