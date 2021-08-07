@@ -499,10 +499,9 @@ section {
   background: #dddddd;
 }
 .about-me .about-wrap .about-bg {
-  background-image: url("kylenishimoto-profile2.png");
+  background-image: url("profile-pic.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
+  background-position: top;
   background-size: cover;
 }
 .about-me .about-wrap .about-icons {
@@ -533,7 +532,7 @@ section {
     margin: 10px 0;
   }
 }
-.about-me .about-wrap .about-icons li a, .about-buttons a {
+.about-me .about-wrap .about-icons li a {
   color: white;
   background: #151515;
   display: inline-block;
@@ -551,10 +550,10 @@ section {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-.about-me .about-wrap .about-icons li a .fa, .about-buttons a .fa {
+.about-me .about-wrap .about-icons li a .fa {
   margin: 12px;
 }
-.about-me .about-wrap .about-icons li a:hover, .about-buttons a:hover {
+.about-me .about-wrap .about-icons li a:hover {
   background: #00c1e4;
   border: 1px solid transparent;
 }
@@ -584,19 +583,19 @@ section {
 .about-buttons {
   margin-top: 25px;
 }
-/* .about-buttons a:first-child {
+.about-buttons a:first-child {
   background: #00c1e4;
   border: 1px solid transparent;
   margin-right: 15px;
   color: #000;
-} */
+}
 @media (max-width: 426px) {
   .about-buttons {
     text-align: center;
   }
 }
 .experience-section, .education-section, .skills-section {
-  padding-top: 65px;
+  padding-top: 30px;
   transition: 1.3s;
   box-sizing: border-box;
 }
@@ -621,23 +620,8 @@ section {
 .single-experience .experience-text, .single-education .education-text {
   background: #222222;
   border: 1px solid #333333;
-  text-align: center;
-}
-
-.education-img-cont {
-  width: 180px;
-  height: 215px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.single-education .education-text .education-img, .work-img {
-  /* height: 150px; */
-  width: 100%;
 }
 .single-experience h3, .single-education h3 {
-  font-size: 20px;
   color: #aaaaaa;
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -979,7 +963,7 @@ section {
   position: relative;
   min-height: 1px;
   float: left; */
-  padding-top: 65px;
+  padding-top: 30px;
   transition: 1.3s;
   box-sizing: border-box;
 }
