@@ -31,7 +31,7 @@ $(document).ready(function(){
     $("body").removeClass('overflow');
     // $(".about-section").removeClass('padding');
     $('html, body').animate({
-      scrollTop: $(".skills-section").offset().top-60
+      scrollTop: $(".education-section").offset().top-60
     }, 1300)
   })
   $('.managed-btn').click(function(){
@@ -47,7 +47,7 @@ $(document).ready(function(){
     $("body").removeClass('overflow');
     // $(".about-section").removeClass('padding');
     $('html, body').animate({
-      scrollTop: $(".portfolio-section").offset().top-60
+      scrollTop: $(".experience-section").offset().top-60
     }, 1300)
   })
   $('.contact-btn').click(function(){
